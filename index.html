@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder and Merger</title>
+</head>
+<body>
+    <h1>Audio Recorder</h1>
+
+    <!-- Buttons for controlling the recording -->
+    <button id="startBtn">Start Recording</button>
+    <button id="stopBtn" disabled>Stop Recording</button>
+    <button id="playBtn" disabled>Play Merged Recording</button>
+
+    <!-- Section to display the audio player for playback -->
+    <h2>Playback</h2>
+    <audio id="audioPlayback" controls></audio>
+
+    <!-- Text area to display the Base64 output of recorded user audio -->
+    <h2>User Audio (Base64)</h2>
+    <textarea id="userBase64Output" rows="6" cols="60" readonly></textarea>
+
+    <!-- Text area to display the Base64 output of merged audio -->
+    <h2>Merged Audio (Base64)</h2>
+    <textarea id="mergedBase64Output" rows="6" cols="60" readonly></textarea>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="test.js"></script> <!-- The JavaScript code -->
+</body>
+</html>
